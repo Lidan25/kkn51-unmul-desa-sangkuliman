@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Village-themed color palette */
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
+
+    /* Nature-inspired green primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm earth tones */
+    --secondary: 45 23% 95%;
+    --secondary-foreground: 210 11% 15%;
+
+    --muted: 45 23% 95%;
+    --muted-foreground: 210 11% 61%;
+
+    --accent: 43 74% 66%;
+    --accent-foreground: 210 11% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 23% 89%;
+    --input: 45 23% 89%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.75rem;
+
+    /* Village green sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 210 11% 15%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 45 23% 95%;
+    --sidebar-accent-foreground: 210 11% 15%;
+    --sidebar-border: 45 23% 89%;
+    --sidebar-ring: 142 76% 36%;
+
+    /* Custom village theme colors */
+    --village-green: 142 76% 36%;
+    --village-brown: 25 50% 44%;
+    --village-gold: 43 74% 66%;
+    --village-sky: 197 71% 73%;
+  }
+
+  .dark {
+    --background: 210 11% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 11% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 11% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 11% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 11% 15%;
+    --muted-foreground: 210 11% 61%;
+
+    --accent: 43 74% 66%;
+    --accent-foreground: 210 11% 7%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 11% 15%;
+    --input: 210 11% 15%;
+    --ring: 142 76% 36%;
+
+    --sidebar-background: 210 11% 7%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 11% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 210 11% 15%;
+    --sidebar-ring: 142 76% 36%;
+
+    /* Dark theme village colors */
+    --village-green: 142 76% 36%;
+    --village-brown: 25 50% 44%;
+    --village-gold: 43 74% 66%;
+    --village-sky: 197 71% 73%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
